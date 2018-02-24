@@ -1,0 +1,50 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ford's URL Shortener</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-half is-narrow">
+        <header>
+          <h1 class="title">
+            Ford's Magic URL Shortener
+          </h1>
+        </header>
+
+        <main>
+          <p class="bold subtitle">Lemme shorten dat url</p>
+          <form>
+            <div class="field">
+              <label class="label">URL</label>
+              <div>
+                <input type="text" class="input" maxlength="100" placeholder="SHORTEN IT!!!" id="urlName"> 
+                <button type="submit" class="button is-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+          <section class="urls section">
+            <ul id="urls">
+            </ul>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
